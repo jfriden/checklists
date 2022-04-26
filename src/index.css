@@ -1,0 +1,140 @@
+/* Några färger
+#ecedee
+#669844
+#4a5772
+#fafafa
+#db4c3f
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 70%;
+  min-width: 768px;
+}
+
+.listsPanel {
+  width: 230px;
+  flex: 0 0 auto;
+  background-color:#fafafa;
+  border-right: 2px solid #f2f2f2;
+  padding: 25px;
+  color: black;
+}
+
+.listsPanel ul {
+  margin-top: 10px;
+  list-style: none;
+  padding: 10px;
+  
+}
+
+.listsPanel li {
+  padding-bottom: 10px;
+  font-weight: 300;
+  display: flex;
+}
+
+.listsPanel li > * {
+  align-items: center;
+}
+
+.listsPanel li span {
+  margin-right: 5px;
+}
+
+.entries {
+  flex: 1 1 auto;
+  background-color: white;
+  padding: 25px;
+}
+
+.entries ul {
+  margin-bottom: 20px;
+}
+
+.entry {
+  list-style: none;
+  border-bottom: 2px solid #f2f2f2;
+  padding: 10px 0px 10px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.entry input[type="checkbox"] {
+  flex: 0 0 auto;
+}
+
+.entry input[type="text"] {
+  outline: none;
+  border: none;
+  font-size: inherit;
+  color: inherit;
+  flex: 1 1 auto;
+}
+
+.entry-remove {
+  visibility: hidden;
+}
+
+.entry:hover .entry-remove {
+  visibility: visible;
+  flex: 0 0 auto;
+}
+
+.list-name-title {
+  color: black;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-left: 37px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+.add {
+  display: flex;
+  color: grey;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-right: 0px;
+  width:fit-content;
+  align-items: center;
+}
+
+.remove-checked {
+  margin-top: 20px;
+}
+
+.material-icons.grey {
+  color:rgb(158, 154, 154);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    min-width: 0px;
+  }
+
+  .container, .listsPanel, .entries {
+    width: 100%;
+  }
+}
