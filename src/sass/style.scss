@@ -1,0 +1,59 @@
+@import "listspanel";
+@import "entries";
+@import "entry";
+
+$text-color: #555;
+$special-color: grey;
+
+/* Några färger
+#ecedee
+#669844
+#4a5772
+#fafafa
+#db4c3f
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", 
+               "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text-color;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 70%;
+  min-width: 768px;
+}
+
+.action {
+  display: flex;
+  color: $special-color;
+  margin: 0 0 5px 0;
+  padding: 0;
+  width:fit-content;
+  align-items: center;
+}
+
+.material-icons.grey {
+  color: $special-color;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    min-width: 0px;
+  }
+
+  .container, .lists-panel, .entries {
+    width: 100%;
+  }
+}

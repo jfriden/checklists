@@ -1,0 +1,157 @@
+@charset "UTF-8";
+.lists-panel {
+  width: 230px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  background-color: #fafafa;
+  border-right: 2px solid #f2f2f2;
+  padding: 25px;
+  color: black;
+}
+
+.lists-panel ul {
+  margin: 10px 0 0 0;
+  list-style: none;
+  padding: 10px;
+}
+
+.lists-panel li {
+  padding: 0 0 10px 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lists-panel li span {
+  margin: 0 5px 0 0;
+}
+
+.entries {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: white;
+  padding: 25px;
+}
+
+.entries ul {
+  margin: 0 0 20px 0;
+}
+
+.entries input[type="checkbox"] {
+  margin: 20px 15px 0 0;
+}
+
+.entries .list-name-title {
+  color: black;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 15px 0 10px 37px;
+  border: none;
+  outline: none;
+}
+
+.entry {
+  list-style: none;
+  border-bottom: 2px solid #f2f2f2;
+  padding: 10px 0px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entry input[type="checkbox"] {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 15px 0 0;
+}
+
+.entry input[type="text"] {
+  outline: none;
+  border: none;
+  font-size: inherit;
+  color: inherit;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.entry .entry-remove {
+  visibility: hidden;
+}
+
+.entry:hover .entry-remove, .entry:active .entry-remove {
+  visibility: visible;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+/* Några färger
+#ecedee
+#669844
+#4a5772
+#fafafa
+#db4c3f
+*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",  "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 70%;
+  min-width: 768px;
+}
+
+.action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: grey;
+  margin: 0 0 5px 0;
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.material-icons.grey {
+  color: grey;
+}
+
+@media (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 0px;
+  }
+  .container, .lists-panel, .entries {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

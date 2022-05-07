@@ -1,0 +1,24 @@
+.lists-panel {
+  width: 230px;
+  flex: 0 0 auto;
+  background-color:#fafafa;
+  border-right: 2px solid #f2f2f2;
+  padding: 25px;
+  color: black;
+  
+  ul {
+    margin: 10px 0 0 0;
+    list-style: none;
+    padding: 10px;
+  }
+
+  li {
+    padding: 0 0 10px 0;
+    font-weight: 300;
+    display: flex;
+
+    span {
+      margin: 0 5px 0 0;
+    }
+  }
+}

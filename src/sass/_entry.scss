@@ -1,0 +1,29 @@
+.entry {
+  list-style: none;
+  border-bottom: 2px solid #f2f2f2;
+  padding: 10px 0px 10px 10px;
+  display: flex;
+  align-items: center;
+
+  input[type="checkbox"] {
+    flex: 0 0 auto;
+    margin: 0 15px 0 0;
+  }
+
+  input[type="text"] {
+    outline: none;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    flex: 1 1 auto;
+  }
+
+  .entry-remove {
+    visibility: hidden;
+  }
+
+  &:hover .entry-remove, &:active .entry-remove {
+    visibility: visible;
+    flex: 0 0 auto;    
+  }
+}
